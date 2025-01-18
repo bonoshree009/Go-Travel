@@ -1,0 +1,317 @@
+.open-sans {
+  font-family: "Open Sans", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+/* shared css */
+
+.section-header{
+    font-size: 2.5rem;
+    font-weight:800 ;
+    color: black;
+    margin-bottom: 30px;
+}
+.section-headerone{
+    font-size: 1.5rem;
+    font-weight:800 ;
+    color: black;
+    margin-bottom: 30px;
+}
+.section-description{
+    font-size: 1rem;
+    color: rgba(66, 66, 71, 1);
+}
+.orange{
+    color: rgba(255, 84, 0, 1);
+}
+.btn{
+    background-color:rgba(255, 84, 0, 1) ;
+    padding: 15px 35px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: white;
+    text-align: center;
+    border: 0;
+    border-radius: 8px;
+}
+.first-section p ,.five-section p,.six-section p{
+    margin-bottom: 30px;
+}
+
+ /* header css   */
+header{
+    margin-top: 50px;
+    margin-left: 135px;
+    margin-right: 135px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+nav ul{
+    display: flex;
+    justify-content: space-around;
+}
+nav li{
+    list-style: none;
+    margin-right: 30px;
+}
+nav li a{
+    text-decoration: none;
+    color: rgba(66, 66, 71, 1);
+    font-size: 16px;
+}
+nav li a:hover{
+    color: rgba(255, 84, 0, 1);
+}
+.banner{
+    margin-top: 50px;
+    align-items: center;
+}
+.main-banner{
+    position: relative;
+    background-position: center;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+} 
+.main-banner::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(28, 28, 28, 0.611), rgba(0, 0, 0, 0.415), rgba(0, 0, 0, 0)); /* কালো থেকে ট্রান্সপারেন্ট */
+    z-index: 1;
+    border-radius: 10px;
+}
+.text-banner{
+    position: absolute;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    z-index: 2;
+    line-height: 20px;
+}
+.banner-title{
+    font-size: 4rem;
+    margin-bottom: 35px;
+}
+.formdiv{
+    padding: 10px;
+    margin-top: 50px;  
+    background: linear-gradient( rgba(255, 255, 255, 0.341), rgba(255, 254, 254, 0.303)); /* কালো থেকে ট্রান্সপারেন্ট */
+    border-radius: 8px;
+}
+.formdiv ul{
+    display: flex;
+    justify-content: center;
+}
+.formdiv li{
+    list-style: none;
+}
+.formdiv input{
+    background: white;
+    padding: 15px;
+    border: 0;
+    border-radius: 8px;
+    width: 50%;
+}
+.firstbtn{
+    background-color:rgba(255, 84, 0, 1) ;
+    color: white;
+    padding: 15px 35px;
+    border: 0;
+    border-radius: 8px;
+    margin-left: 20px;
+}
+/* main css */
+
+main{
+   margin: 100px 135px; 
+}
+
+/* first section */
+
+.first-section{
+    display: flex;
+    justify-content: space-around;
+    line-height: 20px;
+}
+
+/* second-section */
+
+.second-section{
+    text-align: center;
+    margin-top: 100px;
+}
+.picture-grid{
+    margin-top: 60px;
+    display: grid;
+    grid-template-areas: "grid1 grid2 grid2" "grid3 grid4 grid5" "grid6 grid7 grid7";
+    gap:25px;  
+    width: 100%;
+}
+.grid1{grid-area: grid1;}
+.grid2{grid-area: grid2;}
+.grid3{grid-area: grid3;}
+.grid4{grid-area: grid4;}
+.grid5{grid-area: grid5;}
+.grid6{grid-area: grid6;}
+.grid7{grid-area: grid7;}
+
+.picture-grid div {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    background-size: cover;
+}
+.picture-grid img{
+    width: 100%;
+    height: 100%;
+}
+.picture-grid p{
+    position: absolute;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 28px;
+    font-weight: 600;
+    z-index: 2;
+}
+
+/* third-section */
+.third-section{
+    margin-top: 200px;
+    text-align: center;
+}
+.third-section i{
+    color: rgb(139, 150, 58);
+    margin-bottom: 30px;
+    font-size: 50px;
+}
+.third-container{
+   margin-top: 50px;
+   display: flex; 
+   justify-content: center; 
+   gap: 20px;
+   text-align: left;                      
+}
+.grid-itemsone,.grid-itemstwo,.itemsthree-inner{
+    padding: 30px;
+    border-radius: 8px;
+}
+.grid-itemsone,.itemsthree-inner{
+    background-color: rgb(240, 211, 227);
+}
+.grid-itemstwo{
+    background-color: rgb(203, 251, 251);
+}
+.itemsthree-inner{
+    text-align: left;
+    margin-top: 20px;
+}
+.grid-itemsthree{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .picture-grid {
+        grid-template-areas: 
+            "grid1"
+            "grid2"
+            "grid3"
+            "grid4"
+            "grid5"
+            "grid6"
+            "grid7";
+        grid-template-columns: 1fr;
+    }
+}
+/* four-section */
+/* .four-section{
+    margin-top: 100px;
+    text-align: center;
+} */
+
+/* five-section  & six-section*/
+.five-section,.six-section{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-around;
+}
+.five-section iframe{
+    border-radius: 8px;
+}
+.six-one{
+    border: 1px solid rgba(255, 84, 0, 1) ;
+    padding: 20px 45px;
+    border-radius: 15px;
+}
+.six-section form{
+    margin-top: 20px;
+}
+
+.form input{
+    margin-bottom: 20px;
+    padding: 10px;
+    width:93%;
+    height: 100%;
+    border-radius: 8px;
+    border: 0;
+    background-color: rgba(222, 108, 108, 0.405);
+
+}
+.six-btn{
+    background-color:rgba(255, 84, 0, 1) ;
+    padding: 15px 35px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: white;
+    text-align: center;
+    border: 0;
+    border-radius: 8px;
+    width:100%;
+
+}
+/* footer */
+.footer{
+    background-color: rgba(19, 19, 24, 0.05);
+    padding: 107px 330px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.footer ul{
+    margin-top: 30px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer li{
+    list-style: none;
+    margin-left: 30px;
+    font-size: 30px;
+}
+.hr{
+    margin-bottom: 50px;
+}
