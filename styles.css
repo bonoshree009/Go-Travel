@@ -114,20 +114,19 @@ nav li a:hover{
     margin-top: 50px;  
     background: linear-gradient( rgba(255, 255, 255, 0.341), rgba(255, 254, 254, 0.303)); /* কালো থেকে ট্রান্সপারেন্ট */
     border-radius: 8px;
-}
-.formdiv ul{
     display: flex;
+    gap: 10px;
     justify-content: center;
 }
-.formdiv li{
-    list-style: none;
-}
-.formdiv input{
+
+.input-field{
     background: white;
-    padding: 15px;
+    padding: 10px;
     border: 0;
     border-radius: 8px;
-    width: 50%;
+    /* width: 50%; */
+    color: rgba(66, 66, 71, 1);
+    width: 150px;
 }
 .firstbtn{
     background-color:rgba(255, 84, 0, 1) ;
@@ -136,6 +135,16 @@ nav li a:hover{
     border: 0;
     border-radius: 8px;
     margin-left: 20px;
+    cursor: pointer;
+}
+.firstbtn:hover{
+    background-color:rgb(255, 255, 255) ;
+    color: rgb(255, 84, 0);
+    padding: 15px 35px;
+    border: 0;
+    border-radius: 8px;
+    margin-left: 20px;
+    cursor: pointer;
 }
 /* main css */
 
