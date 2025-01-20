@@ -118,13 +118,11 @@ nav li a:hover{
     gap: 10px;
     justify-content: center;
 }
-
 .input-field{
     background: white;
     padding: 10px;
     border: 0;
     border-radius: 8px;
-    /* width: 50%; */
     color: rgba(66, 66, 71, 1);
     width: 150px;
 }
@@ -146,6 +144,7 @@ nav li a:hover{
     margin-left: 20px;
     cursor: pointer;
 }
+
 /* main css */
 
 main{
@@ -158,6 +157,9 @@ main{
     display: flex;
     justify-content: space-around;
     line-height: 20px;
+}
+.first-section li,.five-section li{
+    margin-left: 20px;
 }
 
 /* second-section */
@@ -203,6 +205,7 @@ main{
 }
 
 /* third-section */
+
 .third-section{
     margin-top: 200px;
     text-align: center;
@@ -239,27 +242,8 @@ main{
     align-items: center;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    .picture-grid {
-        grid-template-areas: 
-            "grid1"
-            "grid2"
-            "grid3"
-            "grid4"
-            "grid5"
-            "grid6"
-            "grid7";
-        grid-template-columns: 1fr;
-    }
-}
-/* four-section */
-/* .four-section{
-    margin-top: 100px;
-    text-align: center;
-} */
-
 /* five-section  & six-section*/
+
 .five-section,.six-section{
     margin-top: 100px;
     display: flex;
@@ -276,7 +260,6 @@ main{
 .six-section form{
     margin-top: 20px;
 }
-
 .form input{
     margin-bottom: 20px;
     padding: 10px;
@@ -297,9 +280,30 @@ main{
     border: 0;
     border-radius: 8px;
     width:100%;
-
 }
+.six-img{
+    position: relative;
+    display: flex;
+    justify-content: right;
+    z-index: 1;
+    background-position: center;
+}
+.img-text{
+    background-color:rgba(255, 84, 0, 1) ;
+    z-index: 2;
+    position: absolute;
+    text-align: center;
+    color: rgb(249, 249, 249);
+    padding: 20px;
+    border-radius: 8px;
+    line-height: 5px;
+    transform: rotate(-20deg);
+    bottom: 30px;
+    right: 10px;
+}
+
 /* footer */
+
 .footer{
     background-color: rgba(19, 19, 24, 0.05);
     padding: 107px 330px;
@@ -323,4 +327,57 @@ main{
 }
 .hr{
     margin-bottom: 50px;
+}
+
+/* responsive */
+@media screen and (min-width: 206px) and (max-width: 600px) {
+    header{
+        margin-top: 5px;
+        margin-left:5px;
+        margin-right:5px ;
+    }
+    nav,.formdiv,.first-section,.third-container,.five-section,.six-section{
+        flex-direction: column;
+    }
+    .banner,.third-section,.five-section iframe,.six-section img{
+        margin-top: 20px;
+    }
+    .banner-title,.section-headerone,.section-header{
+        font-size: 1.5rem;
+        margin-bottom: 5px;
+    }
+    .banner img{
+        height: 482px;
+    }
+    .input-field{
+        margin-left: 20px;
+        width: 272px;
+    }
+    .formdiv{
+        margin: 50px;
+}
+main{
+    margin: 20px; 
+ }
+ .first-section{
+    gap: 20px;
+ }
+.itemsthree-inner,.five-section iframe,.six-section img{
+    width: 100%;
+}
+.picture-grid {
+    grid-template-areas: 
+        "grid1"
+        "grid2"
+        "grid3"
+        "grid4"
+        "grid5"
+        "grid6"
+        "grid7";
+    grid-template-columns: 1fr;
+}
+.footer{
+    padding: 20px;
+}
+
 }
